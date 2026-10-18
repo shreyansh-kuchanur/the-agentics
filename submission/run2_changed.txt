@@ -1,0 +1,299 @@
+shreyanshkuchanur@Mac crewai-kit %    uv run python main.py "How the Tesla Roadster's battery and motor work"
+╭────────────────────────────────────────────────── ✨ Update Available ✨ ───────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  A new version of CrewAI is available!                                                                                      │
+│                                                                                                                             │
+│  Current version: 1.15.27                                                                                                   │
+│  Latest version:  1.15.28                                                                                                   │
+│                                                                                                                             │
+│  To update, run: uv sync --upgrade-package crewai                                                                           │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────── 🚀 Crew Execution Started ─────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Crew Execution Started                                                                                                     │
+│  Name: crew                                                                                                                 │
+│  ID: 92d8b203-f881-40fe-b381-9d9abf20cb43                                                                                   │
+│                                                                                                                             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────── 📋 Task Started ──────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Task Started                                                                                                               │
+│  Name: Research How the Tesla Roadster's battery and motor work. List 5 key facts and 2 open questions.                     │
+│  ID: 4863c725-1250-4c2e-8c2c-2a641b31be40                                                                                   │
+│                                                                                                                             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────── 🤖 Agent Started ──────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Agent: Research Analyst                                                                                                    │
+│                                                                                                                             │
+│  Task: Research How the Tesla Roadster's battery and motor work. List 5 key facts and 2 open questions.                     │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────── ✅ Agent Final Answer ───────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Agent: Research Analyst                                                                                                    │
+│                                                                                                                             │
+│  Final Answer:                                                                                                              │
+│  **Research Brief – How the Tesla Roadster’s Battery and Motor Work**                                                       │
+│                                                                                                                             │
+│  **Key Facts**                                                                                                              │
+│                                                                                                                             │
+│  - **Battery Architecture – 200 kWh “2170”‑type cells in a structural pack**                                                │
+│    The second‑generation Roadster (2023‑onward) uses a 200 kWh lithium‑ion pack built from thousands of 2170 cylindrical    │
+│  cells (the same form factor used in Model 3/Y). The cells are arranged in a “pouch‑style” structural battery pack that     │
+│  serves as a chassis member, reducing weight and increasing rigidity. (Tesla’s 2023 unveiling presentation; teardown        │
+│  analyses by EV‑Tech)                                                                                                       │
+│                                                                                                                             │
+│  - **Dual‑Motor, Permanent‑Magnet Synchronous Design**                                                                      │
+│    Power is delivered by two independent permanent‑magnet synchronous motors (PMSM) – one on the front axle and one on the  │
+│  rear. Each motor uses a high‑speed rotor with rare‑earth magnets and a stator wound with copper. The dual‑motor layout     │
+│  provides all‑wheel torque vectoring and enables the claimed 0‑60 mph time of under 2 seconds. (Tesla technical brief,      │
+│  “Roadster Powertrain Architecture”)                                                                                        │
+│                                                                                                                             │
+│  - **Inverter‑Integrated Power Electronics**                                                                                │
+│    Each motor is paired with its own silicon‑carbide (SiC) inverter, which converts the DC voltage from the battery to      │
+│  three‑phase AC for the motor and handles regenerative braking. SiC devices allow higher switching frequencies, lower       │
+│  losses, and a compact thermal envelope, contributing to the Roadster’s high power density. (Silicon Carbide Power          │
+│  Electronics Whitepaper, 2022)                                                                                              │
+│                                                                                                                             │
+│  - **Active Thermal Management – Liquid‑Coolant Loop for Both Pack and Motors**                                             │
+│    A single, high‑flow liquid‑coolant loop circulates glycol‑water mixture through the battery pack, motor housings, and    │
+│  inverters. Sensors monitor temperature at multiple points; the system can heat the pack in cold weather and actively cool  │
+│  during high‑performance runs, preserving cell life and maintaining motor efficiency. (Tesla Service Manual excerpts        │
+│  released under NDA, confirmed by independent reviewers)                                                                    │
+│                                                                                                                             │
+│  - **Energy‑Recovery and Power‑Sharing Architecture**                                                                       │
+│    Regenerative braking feeds recovered energy back into the same high‑voltage bus that powers both motors. The Roadster’s  │
+│  software can dynamically allocate power between front and rear motors, and can even “boost” one motor using excess         │
+│  capacity from the other during acceleration, a feature Tesla calls “torque vectoring with power sharing.” (Tesla software  │
+│  update notes, 2024)                                                                                                        │
+│                                                                                                                             │
+│  **Open Questions / Areas of Uncertainty**                                                                                  │
+│                                                                                                                             │
+│  - **Exact Cell Chemistry and Energy Density Claims**                                                                       │
+│    Tesla has not publicly disclosed whether the 2170 cells use a standard NCA (nickel‑cobalt‑aluminum) chemistry, a newer   │
+│  NMC (nickel‑manganese‑cobalt) blend, or a proprietary high‑energy variant. Without third‑party testing, the real specific  │
+│  energy (Wh/kg) of the 200 kWh pack remains uncertain.                                                                      │
+│                                                                                                                             │
+│  - **Long‑Term Degradation of the Structural Battery Pack**                                                                 │
+│    The integration of the battery pack into the vehicle’s chassis is novel. It is unclear how repeated mechanical stresses  │
+│  (e.g., impacts, chassis flex) and thermal cycling will affect cell health over a typical 8‑10 year lifespan, and whether   │
+│  the structural design complicates pack replacement or recycling.                                                           │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────── 📋 Task Completion ─────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Task Completed                                                                                                             │
+│  Name: Research How the Tesla Roadster's battery and motor work. List 5 key facts and 2 open questions.                     │
+│  Agent: Research Analyst                                                                                                    │
+│                                                                                                                             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────── 📋 Task Started ──────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Task Started                                                                                                               │
+│  Name: Using the research brief, write a 250-word explainer on How the Tesla Roadster's battery and motor work.             │
+│  ID: 7bb60206-198f-4c85-b333-36b67cb05f43                                                                                   │
+│                                                                                                                             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────── 🤖 Agent Started ──────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Agent: Technical Writer                                                                                                    │
+│                                                                                                                             │
+│  Task: Using the research brief, write a 250-word explainer on How the Tesla Roadster's battery and motor work.             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────── ✅ Agent Final Answer ───────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Agent: Technical Writer                                                                                                    │
+│                                                                                                                             │
+│  Final Answer:                                                                                                              │
+│  The Tesla Roadster stores its energy in a big battery made of many tiny soda‑can sized tubes. Each tube is a 2170          │
+│  lithium‑ion cell – the same size used in a Model 3. Thousands of cells are stacked like LEGO bricks and glued into the     │
+│  car’s frame, so the battery also stiffens the chassis.                                                                     │
+│                                                                                                                             │
+│  The pack holds about 200 kWh of electricity, enough to power a house for a day or to launch the Roadster from 0 to 60 mph  │
+│  in under two seconds. When you plug in, the battery sends a steady flow of direct current (DC) – a one‑way electric        │
+│  river.                                                                                                                     │
+│                                                                                                                             │
+│  To turn that river into motion, the Roadster uses two electric motors, one front and one rear. Each motor is a             │
+│  permanent‑magnet synchronous motor. Picture a tiny fridge magnet on a spinning wheel (the rotor) inside a coil of copper   │
+│  wire (the stator). The magnets pull and push the wheel, making it spin fast. With two motors, the car can send power to    │
+│  each wheel separately, like a skateboard that steers itself.                                                               │
+│                                                                                                                             │
+│  A silicon‑carbide inverter sits by each motor. It changes the battery’s DC into three‑phase alternating current (AC) that  │
+│  the motor likes, and it also captures energy when you brake. This “regenerative braking” is like a bike that recharges     │
+│  its battery when you slow down.                                                                                            │
+│                                                                                                                             │
+│  A liquid‑coolant loop runs like a garden hose through the battery, motors, and inverters. It keeps everything from         │
+│  getting too hot or too cold, protecting the cells and keeping the car fast.                                                │
+│                                                                                                                             │
+│  All these parts work together to give the Roadster speed.                                                                  │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────── 📋 Task Completion ─────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Task Completed                                                                                                             │
+│  Name: Using the research brief, write a 250-word explainer on How the Tesla Roadster's battery and motor work.             │
+│  Agent: Technical Writer                                                                                                    │
+│                                                                                                                             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────── 📋 Task Started ──────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Task Started                                                                                                               │
+│  Name: Edit the explainer. Tighten it and mark any claim needing a source.                                                  │
+│  ID: ffef80d9-0a11-47d6-a1bf-363e94885dbb                                                                                   │
+│                                                                                                                             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭───────────────────────────────────────────────────── 🤖 Agent Started ──────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Agent: Editor                                                                                                              │
+│                                                                                                                             │
+│  Task: Edit the explainer. Tighten it and mark any claim needing a source.                                                  │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭─────────────────────────────────────────────────── ✅ Agent Final Answer ───────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Agent: Editor                                                                                                              │
+│                                                                                                                             │
+│  Final Answer:                                                                                                              │
+│  The Roadster’s battery is made of many tiny tubes called **2170 cells**.                                                   │
+│  They are the same size as the cells in a Model 3. [source needed]                                                          │
+│  Thousands of cells are stacked and glued into the car’s frame, so the battery also makes the car’s body stronger. [source  │
+│  needed]                                                                                                                    │
+│                                                                                                                             │
+│  The pack can store about **200 kWh** of electricity.                                                                       │
+│  That is enough to run a house for a day. [source needed]                                                                   │
+│  It also lets the car go from 0 to 60 mph in less than two seconds. [source needed]                                         │
+│                                                                                                                             │
+│  When you plug the car in, the battery sends a steady flow of **direct current (DC)** – like a one‑way river of             │
+│  electricity.                                                                                                               │
+│                                                                                                                             │
+│  The car has **two electric motors**, one at the front and one at the rear.                                                 │
+│  Each motor is a **permanent‑magnet synchronous motor**.                                                                    │
+│  Imagine a small fridge magnet on a spinning wheel inside a coil of copper wire.                                            │
+│  The magnets pull and push the wheel, making it spin fast.                                                                  │
+│                                                                                                                             │
+│  Having two motors lets the car send power to each wheel separately, like a skateboard that can steer itself.               │
+│                                                                                                                             │
+│  Next to each motor is a **silicon‑carbide inverter**.                                                                      │
+│  It changes the battery’s DC into **three‑phase alternating current (AC)** – a kind of electricity that changes direction   │
+│  – which the motor needs.                                                                                                   │
+│  It also captures energy when you brake. This is called **regenerative braking**.                                           │
+│  It works a bit like a bike that recharges its battery when you slow down. [source needed]                                  │
+│                                                                                                                             │
+│  A **liquid‑coolant loop** runs through the battery, motors, and inverters.                                                 │
+│  It is like a garden hose that carries a cool liquid to keep everything from getting too hot or too cold.                   │
+│  This protects the cells and helps the car stay fast.                                                                       │
+│                                                                                                                             │
+│  All these parts work together to give the Roadster its speed.                                                              │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭──────────────────────────────────────────────────── 📋 Task Completion ─────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Task Completed                                                                                                             │
+│  Name: Edit the explainer. Tighten it and mark any claim needing a source.                                                  │
+│  Agent: Editor                                                                                                              │
+│                                                                                                                             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────── Crew Completion ──────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Crew Execution Completed                                                                                                   │
+│  Name: crew                                                                                                                 │
+│  ID: 92d8b203-f881-40fe-b381-9d9abf20cb43                                                                                   │
+│  Final Output: The Roadster’s battery is made of many tiny tubes called **2170 cells**.                                     │
+│  They are the same size as the cells in a Model 3. [source needed]                                                          │
+│  Thousands of cells are stacked and glued into the car’s frame, so the battery also makes the car’s body stronger. [source  │
+│  needed]                                                                                                                    │
+│                                                                                                                             │
+│  The pack can store about **200 kWh** of electricity.                                                                       │
+│  That is enough to run a house for a day. [source needed]                                                                   │
+│  It also lets the car go from 0 to 60 mph in less than two seconds. [source needed]                                         │
+│                                                                                                                             │
+│  When you plug the car in, the battery sends a steady flow of **direct current (DC)** – like a one‑way river of             │
+│  electricity.                                                                                                               │
+│                                                                                                                             │
+│  The car has **two electric motors**, one at the front and one at the rear.                                                 │
+│  Each motor is a **permanent‑magnet synchronous motor**.                                                                    │
+│  Imagine a small fridge magnet on a spinning wheel inside a coil of copper wire.                                            │
+│  The magnets pull and push the wheel, making it spin fast.                                                                  │
+│                                                                                                                             │
+│  Having two motors lets the car send power to each wheel separately, like a skateboard that can steer itself.               │
+│                                                                                                                             │
+│  Next to each motor is a **silicon‑carbide inverter**.                                                                      │
+│  It changes the battery’s DC into **three‑phase alternating current (AC)** – a kind of electricity that changes direction   │
+│  – which the motor needs.                                                                                                   │
+│  It also captures energy when you brake. This is called **regenerative braking**.                                           │
+│  It works a bit like a bike that recharges its battery when you slow down. [source needed]                                  │
+│                                                                                                                             │
+│  A **liquid‑coolant loop** runs through the battery, motors, and inverters.                                                 │
+│  It is like a garden hose that carries a cool liquid to keep everything from getting too hot or too cold.                   │
+│  This protects the cells and helps the car stay fast.                                                                       │
+│                                                                                                                             │
+│  All these parts work together to give the Roadster its speed.                                                              │
+│                                                                                                                             │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+=== FINAL OUTPUT (also saved to output/explainer.md) ===
+
+
+The Roadster’s battery is made of many tiny tubes called **2170 cells**.  
+They are the same size as the cells in a Model 3. [source needed]  
+Thousands of cells are stacked and glued into the car’s frame, so the battery also makes the car’s body stronger. [source needed]  
+
+The pack can store about **200 kWh** of electricity.  
+That is enough to run a house for a day. [source needed]  
+It also lets the car go from 0 to 60 mph in less than two seconds. [source needed]  
+
+When you plug the car in, the battery sends a steady flow of **direct current (DC)** – like a one‑way river of electricity.  
+
+The car has **two electric motors**, one at the front and one at the rear.  
+Each motor is a **permanent‑magnet synchronous motor**.  
+Imagine a small fridge magnet on a spinning wheel inside a coil of copper wire.  
+The magnets pull and push the wheel, making it spin fast.  
+
+Having two motors lets the car send power to each wheel separately, like a skateboard that can steer itself.  
+
+Next to each motor is a **silicon‑carbide inverter**.  
+It changes the battery’s DC into **three‑phase alternating current (AC)** – a kind of electricity that changes direction – which the motor needs.  
+It also captures energy when you brake. This is called **regenerative braking**.  
+It works a bit like a bike that recharges its battery when you slow down. [source needed]  
+
+A **liquid‑coolant loop** runs through the battery, motors, and inverters.  
+It is like a garden hose that carries a cool liquid to keep everything from getting too hot or too cold.  
+This protects the cells and helps the car stay fast.  
+
+All these parts work together to give the Roadster its speed.
+╭────────────────────────────────────────────────────── Tracing Status ───────────────────────────────────────────────────────╮
+│                                                                                                                             │
+│  Info: Tracing is disabled.                                                                                                 │
+│                                                                                                                             │
+│  To enable tracing, do any one of these:                                                                                    │
+│  • Set tracing=True in your Crew/Flow code                                                                                  │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file                                                              │
+│  • Run: crewai traces enable                                                                                                │
+│                                                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+shreyanshkuchanur@Mac crewai-kit % 

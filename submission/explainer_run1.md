@@ -1,0 +1,7 @@
+**Edited Explainer (with source flags)**  
+
+The Roadster is powered by a 200 kWh lithium‑ion pack assembled from Tesla’s 2170 cylindrical cells, organized into twelve high‑voltage modules [source needed]. A liquid‑cooling loop circulates through the pack while a Battery Management System continuously monitors each cell’s voltage and temperature, balancing cells and preventing over‑charge or deep discharge [source needed]. Because the cells have low internal impedance and the pack operates at roughly 400 V, it can deliver high power with modest currents, reducing I²R losses and supporting the EPA‑rated 620‑mile (≈1,000 km) range [source needed].
+
+Propelling the car is a single‑speed, three‑phase permanent‑magnet synchronous motor that can spin to about 20,000 rpm [source needed]. Neodymium‑iron‑boron magnets on the rotor provide a constant magnetic field, while a silicon‑carbide (SiC) inverter switches the stator windings to create a rotating field that generates torque [source needed]. The SiC devices enable peak outputs of roughly 1,900 hp (≈1,400 kW) while maintaining around 95 % efficiency during cruising [source needed].
+
+When the accelerator is released, the motor functions as a generator. The same SiC inverter channels the recovered electricity back into the battery, and the BMS limits the charge‑acceptance rate to about 300 kW to keep cell temperatures within safe limits [source needed]. This regenerative braking extends range and reduces wear on the conventional brake system.
